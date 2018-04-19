@@ -6,3 +6,5 @@ languages:
 level: 1
 type:
   - lab
+
+parent_template: git@github.com:learn-co-curriculum/upperline-hs-detention-oo-lab.git
