@@ -5,7 +5,7 @@ describe "Detention" do
   before(:each) do
     @test = Detention.new
   end
-  
+
   it "can create instances of the detention class" do
     expect(@test).to be_an_instance_of(Detention)
   end
@@ -38,6 +38,14 @@ describe "Detention" do
     expect(@test.students).to include("Rebecca")
   end
 
+  it "Lists the students currently in detention" do
+    @test.add_student("Tom")
+    @test.add_student("Fred")
+    @test.add_student("Amanda")
+    @test.add_student("Allison")
+    expect(@test.students).to eq(["Tom", "Fred", "Amanda", "Allison"])
+  end
+
   it "can remove students" do
     @test.add_student("Mary")
     @test.add_student("Jose")
@@ -46,12 +54,6 @@ describe "Detention" do
     expect(@test.students).to include("Jose")
   end
 
-  it "Lists the students currently in detention" do
-    @test.add_student("Tom")
-    @test.add_student("Fred")
-    @test.add_student("Amanda")
-    @test.add_student("Allison")
-    expect(@test.students).to eq(["Tom", "Fred", "Amanda", "Allison"])
-  end
+
 
 end
