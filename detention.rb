@@ -11,7 +11,7 @@ class Detention
     students = []
   end
 
-  def add_student(students)
+  def add_student(name)
     students << "#{name}"
   end
 
