@@ -7,4 +7,7 @@ class Detention
     "collective punishment"
   end
 
+  def students
+  end
+
 end
