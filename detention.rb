@@ -11,9 +11,11 @@ class Detention
     "collective punishment"
   end
 
-
   def add_student(name)
     @students << name
+  end
+
+  def remove_student(name)
   end
 
 end
