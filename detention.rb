@@ -12,7 +12,7 @@ class Detention
   end
 
   def add_student
-    students << name 
+    students << name
   end
 
 end
