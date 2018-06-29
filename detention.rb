@@ -3,7 +3,7 @@ class Detention
 
   attr_accessor :location, :time, :grumpy_teacher
 
-  def activity 
+  def activity
     "collective punishment"
   end
 
