@@ -11,4 +11,7 @@ class Detention
     students = []
   end
 
+  def add_student
+  end
+
 end
