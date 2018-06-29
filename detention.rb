@@ -8,6 +8,7 @@ class Detention
   end
 
   def students
+    students = []
   end
 
 end
